@@ -185,3 +185,21 @@ footer { background: #000; color: #fff; padding: 46px 0; }
   .nav-links a.hide-m { display: none; }
   .shot-frame img { height: 380px; }
 }
+
+/* ---------- hero 文案与景深轮播 ---------- */
+#heroMeta {
+  color: var(--faint); font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: 1.5px; margin-bottom: 8px;
+}
+#heroTitle {
+  color: var(--ink); font-size: 26px; font-weight: 700;
+  letter-spacing: 1px; line-height: 1.25; margin-bottom: 10px;
+}
+.shot-stack { position: relative; display: inline-block; }
+.shot-stack .back {
+  position: absolute; top: -16px; left: -22px;
+  height: 430px; width: auto;
+  border: 1px solid var(--line); border-radius: 10px;
+  filter: grayscale(1); opacity: .35; z-index: 0;
+}
+.shot-frame { position: relative; z-index: 1; display: inline-block; }
