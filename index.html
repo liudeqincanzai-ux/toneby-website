@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toneby — Film Color Grading Camera &amp; Reference-Color Photo Editor</title>
+  <meta name="description" content="Toneby combines reference-image color matching, authentic 3D LUTs and a real-time LUT camera with 100% on-device processing. No uploads. No accounts.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="wrap nav">
+  <a class="brand" href="/toneby-website/"><span class="mark">T</span>TONEBY</a>
+  <nav class="nav-links mono">
+    <a href="#features">FEATURES</a>
+    <a href="https://liudeqincanzai-ux.github.io/toneby-lut-showcase/" target="_blank" rel="noopener">LUT GALLERY</a>
+    <a href="#faq" class="hide-m">FAQ</a>
+    <a href="#download" class="btn-nav">DOWNLOAD</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="wrap hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <hr class="rule">
+      <p>Transform your phone into a reference-color film camera. Toneby matches the exact tones of any reference photo with authentic 3D LUTs, film grain and a real-time LUT camera — processed entirely on your device.</p>
+      <div class="store-btns">
+        <a class="store-btn" id="btn-play" href="https://play.google.com/store/apps/details?id=com.ahs.referencetonematch" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 2.5v19l11-9.5L3 2.5z"/><path d="M14 12l4.5-3.9 2.6 1.5c.8.5.8 1.7 0 2.2l-2.6 1.5L14 12z" opacity=".8"/></svg>
+          <span>GET IT ON<small>GOOGLE PLAY</small></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-center">
+      <div class="shot-frame">
+        <button class="shot-arrow prev" id="prevBtn" aria-label="Previous screenshot">‹</button>
+        <img id="shotImg" src="assets/shots/shot_01.jpg" alt="Toneby app screenshot">
+        <button class="shot-arrow next" id="nextBtn" aria-label="Next screenshot">›</button>
+      </div>
+      <div class="shot-caption" id="shotCaption">01 / 09 — HOME</div>
+    </div>
+
+    <div class="hero-right" id="heroGroups">
+      <button class="grp active" data-g="0"><span class="no">— 01</span>FILM COLOR ENGINE</button>
+      <button class="grp" data-g="1"><span class="no">— 02</span>LOCAL PRIVACY</button>
+      <button class="grp" data-g="2"><span class="no">— 03</span>LUT CAMERA &amp; MORE</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NUMBERS ============ -->
+<section class="numbers" id="features">
+  <div class="cell">
+    <div class="big">01</div>
+    <h3>Film Color Engine</h3>
+    <p>Match the exact tones of any reference photo. Authentic 3D LUTs, film grain, halation and bloom — rendered locally with GLSL precision, down to the curve.</p>
+  </div>
+  <div class="cell">
+    <div class="big">02</div>
+    <h3>Privacy-First Architecture</h3>
+    <p>Every photo is processed 100% on your device. Zero uploads, zero accounts, zero tracking. What happens on your phone stays on your phone.</p>
+  </div>
+  <div class="cell">
+    <div class="big">03</div>
+    <h3>LUT Camera &amp; More</h3>
+    <p>Shoot with real-time film LUTs, import your own .cube files, and finish with multi-ratio grid collages. One studio, complete workflow.</p>
+  </div>
+</section>
+
+<!-- ============ FEATURES INTRO ============ -->
+<section class="wrap features-intro" id="modules">
+  <div class="tag">SYSTEM // FEATURES</div>
+  <h2>Professional film color grading, in your pocket.</h2>
+  <p>A lightweight, 100% offline alternative to VSCO presets and Lightroom Mobile profiles — built for creators who demand reference-accurate color and absolute privacy.</p>
+</section>
+
+<!-- ============ MODULES ============ -->
+<section class="wrap modules">
+  <div class="module">
+    <div class="mod-shot"><img src="assets/shots/shot_02.jpg" alt="Select a reference photo and start color matching"></div>
+    <div class="mod-txt">
+      <div class="fig">FIG. 01 // 05</div>
+      <div class="mod">MODULE01</div>
+      <h3>Reference color workspace.</h3>
+      <p>Pick any reference photo and one tap matches its tones onto your shot. A gallery-style home keeps your work focused — like a private exhibition.</p>
+    </div>
+  </div>
+  <div class="module">
+    <div class="mod-shot"><img src="assets/shots/shot_03.jpg" alt="Adjustment panel with match strength, LUT layers and curves"></div>
+    <div class="mod-txt">
+      <div class="fig">FIG. 02 // 05</div>
+      <div class="mod">MODULE02</div>
+      <h3>Powerful. Yet simple.</h3>
+      <p>Match strength, local adjustment, dual LUT layers and per-channel curves — every parameter you need, nothing you don't. Copy, paste and sync settings across photos.</p>
+    </div>
+  </div>
+  <div class="module">
+    <div class="mod-shot"><img src="assets/shots/shot_04.jpg" alt="Film grain and HSL adjustment panel"></div>
+    <div class="mod-txt">
+      <div class="fig">FIG. 03 // 05</div>
+      <div class="mod">MODULE03</div>
+      <h3>Film grain &amp; HSL lab.</h3>
+      <p>ISO-simulated grain from 100 to 3200 with black-and-white and color-dye modes, plus per-hue hue, saturation and luminance control. Analog texture, digital precision.</p>
+    </div>
+  </div>
+  <div class="module">
+    <div class="mod-shot"><img src="assets/shots/shot_06.jpg" alt="Output settings with format, size and quality"></div>
+    <div class="mod-txt">
+      <div class="fig">FIG. 04 // 05</div>
+      <div class="mod">MODULE04</div>
+      <h3>Export your way.</h3>
+      <p>JPG, PNG or WebP. Full resolution or quick-share sizes. Full control over quality — batch export the whole set when the look is locked.</p>
+    </div>
+  </div>
+  <div class="module">
+    <div class="mod-shot"><img src="assets/shots/shot_08.jpg" alt="Settings with appearance, language, EXIF and privacy"></div>
+    <div class="mod-txt">
+      <div class="fig">FIG. 05 // 05</div>
+      <div class="mod">MODULE05</div>
+      <h3>Settings &amp; EXIF control.</h3>
+      <p>Light and dark modes, four languages, and full control over which EXIF data — GPS, camera, shooting settings — stays embedded when you share.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LUT GALLERY ============ -->
+<section class="gallery-strip" id="lut">
+  <div class="wrap">
+    <h2>LUT Gallery</h2>
+    <p>Explore the full film-style collection — G200T, 5207T, 5219T, D55T and more. Every look ships inside the app, ready for your photos and your camera.</p>
+    <div class="cards">
+      <div class="card">G200T<small>GOLD 200 FILM</small></div>
+      <div class="card">5207T<small>CINEMA VISION3</small></div>
+      <div class="card">5219T<small>CINEMA VISION3</small></div>
+      <div class="card">D55T<small>DAYLIGHT 5500K</small></div>
+      <div class="card">GS800T<small>GRAY SCALE</small></div>
+    </div>
+    <a class="link-btn" href="https://liudeqincanzai-ux.github.io/toneby-lut-showcase/" target="_blank" rel="noopener">OPEN FULL LUT GALLERY →</a>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2>Frequently Asked Questions</h2>
+    <details open>
+      <summary>Are my photos uploaded to a server?</summary>
+      <div class="a">No. Every photo is processed 100% locally on your device. Toneby has no accounts, no cloud uploads and no tracking — your images never leave your phone.</div>
+    </details>
+    <details>
+      <summary>Can I import my own .cube LUT files?</summary>
+      <div class="a">Yes. Import standard .cube LUT files and use them in the LUT camera and the reference-color workspace, alongside the built-in film-style collection.</div>
+    </details>
+    <details>
+      <summary>What is included in Pro?</summary>
+      <div class="a">Pro unlocks the full advanced toolkit — including premium LUT packs and pro grading tools. One-time purchase through Google Play billing.</div>
+    </details>
+    <details>
+      <summary>Which devices are supported?</summary>
+      <div class="a">Toneby runs on Android 10 and above and is optimized for the latest Android versions, including full support for edge-to-edge and dark mode.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="download">
+  <div class="wrap">
+    <h2>UPGRADE YOUR COLOR WORKFLOW.</h2>
+    <div class="store-btns">
+      <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.ahs.referencetonematch" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 2.5v19l11-9.5L3 2.5z"/><path d="M14 12l4.5-3.9 2.6 1.5c.8.5.8 1.7 0 2.2l-2.6 1.5L14 12z" opacity=".8"/></svg>
+        <span>GET IT ON<small>GOOGLE PLAY</small></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span class="fbrand">TONEBY</span>
+    <nav class="foot-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </nav>
+    <span class="copy">© 2026 Toneby. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var slides = [
+    { src: "assets/shots/shot_01.jpg", cap: "01 / 09 — HOME", g: 0 },
+    { src: "assets/shots/shot_02.jpg", cap: "02 / 09 — REFERENCE MATCH", g: 0 },
+    { src: "assets/shots/shot_03.jpg", cap: "03 / 09 — ADJUSTMENT PANEL", g: 0 },
+    { src: "assets/shots/shot_04.jpg", cap: "04 / 09 — FILM GRAIN & HSL", g: 0 },
+    { src: "assets/shots/shot_05.jpg", cap: "05 / 09 — BEFORE / AFTER", g: 0 },
+    { src: "assets/shots/shot_06.jpg", cap: "06 / 09 — EXPORT", g: 0 },
+    { src: "assets/shots/shot_07.jpg", cap: "07 / 09 — COLLAGE", g: 2 },
+    { src: "assets/shots/shot_08.jpg", cap: "08 / 09 — SETTINGS", g: 1 },
+    { src: "assets/shots/shot_09.jpg", cap: "09 / 09 — EXIF CONTROL", g: 1 }
+  ];
+  var cur = 0;
+  var img = document.getElementById("shotImg");
+  var cap = document.getElementById("shotCaption");
+  var btns = document.querySelectorAll("#heroGroups .grp");
+
+  function show(i) {
+    cur = (i + slides.length) % slides.length;
+    img.style.opacity = 0;
+    setTimeout(function () {
+      img.src = slides[cur].src;
+      cap.textContent = slides[cur].cap;
+      img.style.opacity = 1;
+    }, 120);
+    var g = slides[cur].g;
+    btns.forEach(function (b, bi) { b.classList.toggle("active", bi === g); });
+  }
+
+  document.getElementById("prevBtn").onclick = function () { show(cur - 1); };
+  document.getElementById("nextBtn").onclick = function () { show(cur + 1); };
+  btns.forEach(function (b, bi) {
+    b.onclick = function () {
+      var first = slides.findIndex(function (s) { return s.g === bi; });
+      show(first >= 0 ? first : cur);
+    };
+  });
+
+  img.style.transition = "opacity .18s";
+  var tx = null;
+  img.addEventListener("touchstart", function (e) { tx = e.touches[0].clientX; }, { passive: true });
+  img.addEventListener("touchend", function (e) {
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1));
+    tx = null;
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
